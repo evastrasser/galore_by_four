@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+  
+<head>
+
+
+<style> 
+  body {
+      background-color:  #F5F5DC;
+      margin: 50px;
+      height: 100vh;
+  }
+  h1 {
+    font-family: URW Chancery L, cursive
+    color: black; 
+    text-align: center;
+  }
+  .Mama {
+    font-family: 'Brush Script MT', cursive
+  }
+  .myButton {
+    background-color: #00cc99;
+    color: black;
+    padding: 10px 15px;
+    border: solid;
+    border-radius: 50px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  .myButtonsmoothie {
+    background-color: #00cc99;
+    color: black;
+    padding: 5px 10px;
+    border: solid;
+    border-radius: 50px;
+    font-size: 10px;
+    cursor: pointer;
+  }
+  </style>
+  <title>GALORE BY 4</title>
+</head>
+<body>
+  
+  <!-- Default formatting for h1 element and p element -->
+  <h1>
+    GALORE BY 
+    <span class="Mama">~ 4 ~</span>
+  </h1>
+  <button class="myButton" onclick="toggletable()">Smoothie Nutrition </button>
+  <button class="myButtonsmoothie" onclick="toggletable()">Before The Blend </button>
+ 
+  
+  <img src="Before The Blend.jpg" alt="Parrot" title="One of our full of fresh fruit smoothies, 
+    including ripe mango, juicy strawberry, some luscious and creamy pieces of
+    banana, and finally a touch of basil." width="50">
+  <table id="Nutrition" border="1" cellpadding="8" style="display:none">
+  <tr>
+    <th>Typical Values per litre</th>
+    <th>Calories (kcal)</th>
+    <th>Percentage (%)</th>
+  </tr>
+
+  <tr>
+    <td>Sugar</td>
+    <td>~248 kcal</td>
+    <td>~72%</td>
+  </tr>
+
+  <tr>
+    <td>Other carbohydrates</td>
+    <td>~104 kcal</td>
+    <td>~30%</td>
+  </tr>
+
+  <tr>
+    <td>Carbohydrate</td>
+    <td>~352 kcal</td>
+    <td>~102%</td>
+  </tr>
+
+  <tr>
+    <td>Fibre</td>
+    <td>~26 kcal</td>
+    <td>~8%</td>
+  </tr>
+
+  <tr>
+    <td>Protein</td>
+    <td>~20 kcal</td>
+    <td>~6%</td>
+  </tr>
+
+  <tr>
+    <td>Fat</td>
+    <td>~19 kcal</td>
+    <td>~5%</td>
+  </tr>
+
+
+</table>
+  <script> 
+    function toggletable() {
+      let table = document.getElementById("Nutrition");
+      if (table.style.display == "none") {
+        table.style.display = "table";
+      } else {
+        table.style.display = "none";
+      }
+     
+    }  
+  </script>
+
+
+</body>
+</html>
