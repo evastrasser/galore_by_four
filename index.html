@@ -28,8 +28,8 @@
     cursor: pointer;
   }
   .myButtonsmoothie {
-    background-color: #00cc99;
-    color: black;
+    background-color: #cc0000;
+    color: #cc0;
     padding: 5px 10px;
     border: solid;
     border-radius: 50px;
@@ -47,13 +47,14 @@
     <span class="Mama">~ 4 ~</span>
   </h1>
   <button class="myButton" onclick="toggletable()">Smoothie Nutrition </button>
-  <button class="myButtonsmoothie" onclick="toggletable()">Before The Blend </button>
+  <button class="myButtonsmoothie" onclick="BeforeBlend()">★Before Our Blend★</button>
  
   
-  <img src="Before The Blend.jpg" alt="Parrot" title="One of our full of fresh fruit smoothies, 
-    including ripe mango, juicy strawberry, some luscious and creamy pieces of
-    banana, and finally a touch of basil." width="50">
+  <img id="BeforeBlend" src="Before The Blend.jpg" style="display:none" alt="Before Our Blend. Not Available? Please contact us on +44 7763 501266" title="One of our full of fresh fruit smoothies, 
+ including ripe mango, juicy strawberry, some luscious and creamy pieces of
+banana, and finally a touch of basil." width="100"> 
   <table id="Nutrition" border="1" cellpadding="8" style="display:none">
+    
   <tr>
     <th>Typical Values per litre</th>
     <th>Calories (kcal)</th>
@@ -107,8 +108,17 @@
         table.style.display = "none";
       }
      
-    }  
+    } 
+    function BeforeBlend() {
+      let image = document.getElementById("BeforeBlend");
+      if (image.style.display == "none") {
+        image.style.display = "block";
+      } else {
+        image.style.display = "none";
+      }
+    }
   </script>
+  
 
 
 </body>
